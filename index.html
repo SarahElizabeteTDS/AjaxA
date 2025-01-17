@@ -9,8 +9,8 @@
     <div>
         <h1>IFind Cinema </h1>
         <input type="text" id="movieName" placeholder="Digite o nome do filme">
-        <button id="searchButton">Buscar </button>
-        <h2>Lista de flmes buscados </h2>
+        <button id="searchButton">Buscar</button>
+        <h2>Lista de filmes buscados</h2>
         <div id="results"> </div>
     </div>
 
@@ -39,8 +39,7 @@
                         `<h2>${movie.title}</h2>
                         <p>${movie.overview}</p>
                         <img src="https://image.tmdb.org/t/p/w200${movie.poster_path}" alt="${movie.title}">`;
-                    }else
-                    {
+                    }else{
                         document.getElementById('results').innerHTML = '<p>Filme não encontrado</p>';
                     }
                 })
